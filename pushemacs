@@ -1,4 +1,0 @@
-#!/bin/bash
-
-cp .emacs ~/
-cp -rf .emacs.d ~/

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cp .emacs ~/
+cp -rf .emacs.d ~/
+cp -rf .vim ~/

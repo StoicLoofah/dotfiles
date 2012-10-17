@@ -11,13 +11,21 @@
 (setq inhibit-startup-message t
 inhibit-startup-echo-area-message t)
 
-(require 'multi-web-mode)
-(setq mweb-default-major-mode 'html-mode)
-(setq mweb-tags '((php-mode "<\\?php\\|<\\? \\|<\\?=" "\\?>")
-                  (javascript-mode "<script +\\(type=\"text/javascript\"\\|language=\"javascript\"\\)[^>]*>" "</script>")
-                  (css-mode "<style +type=\"text/css\"[^>]*>" "</style>")))
-(setq mweb-filename-extensions '("php" "htm" "html" "ctp" "phtml" "php4" "php5"))
-(multi-web-global-mode 1)
+(set-face-attribute 'default nil :height 100)
+
+(add-to-list 'default-frame-alist '(left . 0))
+(add-to-list 'default-frame-alist '(top . 0))
+(add-to-list 'default-frame-alist '(height . 52))
+(add-to-list 'default-frame-alist '(width . 200))
+(split-window-horizontally)
+
+;(require 'multi-web-mode)
+;(setq mweb-default-major-mode 'html-mode)
+;(setq mweb-tags '((php-mode "<\\?php\\|<\\? \\|<\\?=" "\\?>")
+;                  (javascript-mode "<script +\\(type=\"text/javascript\"\\|language=\"javascript\"\\)[^>]*>" "</script>")
+;                  (css-mode "<style +type=\"text/css\"[^>]*>" "</style>")))
+;(setq mweb-filename-extensions '("php" "htm" "html" "ctp" "phtml" "php4" "php5"))
+;(multi-web-global-mode 1)
 
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)

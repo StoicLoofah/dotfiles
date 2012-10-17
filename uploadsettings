@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cp ~/.emacs ./
+cp -rf ~/.emacs.d ./
+git add .emacs.d
+cp -rf ~/.vim .
+git status
