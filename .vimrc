@@ -1,8 +1,11 @@
 set nu
 
+call pathogen#infect()
+
 syntax on
 
 filetype indent on
+filetype plugin on
 set autoindent
 
 set hls
@@ -17,3 +20,4 @@ set cindent
 
 set ic
 autocmd BufWritePre * :%s/\s\+$//e
+
