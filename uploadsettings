@@ -5,4 +5,5 @@ cp -rf ~/.emacs.d ./
 git add .emacs.d
 cp -rf ~/.vim .
 cp ~/.vimrc ./
+cp ~/.screenrc ./
 git status
