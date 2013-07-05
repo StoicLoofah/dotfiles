@@ -17,7 +17,7 @@ inhibit-startup-echo-area-message t)
 (add-to-list 'default-frame-alist '(top . 0))
 (add-to-list 'default-frame-alist '(height . 52))
 (add-to-list 'default-frame-alist '(width . 200))
-(split-window-horizontally)
+;(split-window-horizontally)
 
 ;(require 'multi-web-mode)
 ;(setq mweb-default-major-mode 'html-mode)
