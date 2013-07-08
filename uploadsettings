@@ -1,6 +1,7 @@
 #!/bin/bash
 
-#cp ~/.emacs ./
+cp ~/.emacs ./
+rm ~/.emacs.d/session*
 cp -rf ~/.emacs.d ./
 git add .emacs.d
 cp -rf ~/.vim .
