@@ -4,8 +4,8 @@ if [ -f ~/.bashrc ]; then
     source ~/.bashrc
 fi
 
-export PATH=$PATH:./
 # add more path variables
+export PATH=$PATH:./
 
 source ~/settings/virtualenv.bash_profile
 
