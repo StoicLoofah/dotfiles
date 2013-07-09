@@ -5,6 +5,7 @@ rm ~/.emacs.d/session*
 cp -rf ~/.emacs.d ./
 git add .emacs.d
 cp -rf ~/.vim .
+rm .vim/.netrwhist
 cp ~/.vimrc ./
 cp ~/.screenrc ./
 git status

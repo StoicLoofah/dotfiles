@@ -1,0 +1,8 @@
+#!/bin/bash
+
+mv ~/.bash_profile ~/.bash_profile.bak
+mv ~/.bashrc ~/.bashrc.bak
+
+cp .bash_profile ~/
+cp .bashrc ~/
+./push_settings
