@@ -6,6 +6,12 @@
 [ -z "$PS1" ] && return
 
 source ~/settings/ubuntu.bashrc
+source ~/settings/git-completion.bash
+source ~/settings/umask.bashrc
+# source ~/settings/prompt.bashrc
+source ~/settings/alias.bashrc
+source ~/settings/rlwrap.bashrc
+# source ~/settings/node.bashrc
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -15,6 +21,4 @@ source ~/settings/ubuntu.bashrc
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
-
-source ~/settings/git-completion.bash
 
