@@ -30,7 +30,7 @@
                            (local-set-key "\C-c!" 'run-js)
                            (local-set-key "\C-c\C-r" 'js-send-region)
                            (local-set-key "\C-c\C-j" 'js-send-line)
-                           (set (make-local-variable 'compile-command) 
+                           (set (make-local-variable 'compile-command)
                                 (let ((file buffer-file-name)) (concat jshint-cli file)))
                            (set (make-local-variable 'compilation-read-command) nil)
                            (local-set-key "\C-c\C-u" 'whitespace-clean-and-compile)
@@ -77,3 +77,10 @@
 
 (add-hook 'comint-preoutput-filter-functions 'node-repl-comint-preoutput-filter)
 (add-hook 'comint-output-filter-functions 'node-repl-comint-preoutput-filter)
+
+
+(add-to-list 'load-path "~/.emacs.d/jade-mode") ;; github.com/brianc/jade-mode
+(require 'sws-mode)
+(require 'jade-mode)
+(add-to-list 'auto-mode-alist '("\\.styl$" . sws-mode))
+(add-to-list 'auto-mode-alist '("\\.jade$" . jade-mode))

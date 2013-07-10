@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#cp .emacs ~/
+cp .emacs ~/
 cp -rf .emacs.d ~/
 cp -rf .vim ~/
 cp .vimrc ~/
