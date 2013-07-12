@@ -7,6 +7,4 @@ fi
 # add more path variables
 export PATH=$PATH:./
 
-source ~/settings/virtualenv.bash_profile
-
 source ~/settings/keychain.bash_profile

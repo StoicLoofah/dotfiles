@@ -12,6 +12,7 @@ source ~/settings/umask.bashrc
 source ~/settings/alias.bashrc
 source ~/settings/rlwrap.bashrc
 # source ~/settings/node.bashrc
+source ~/settings/virtualenv.bash_profile
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like

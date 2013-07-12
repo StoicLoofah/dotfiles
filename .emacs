@@ -38,6 +38,8 @@ inhibit-startup-echo-area-message t)
 (setq indent-tabs-mode nil)
 (setq indent-line-function 'insert-tab)
 
+(show-paren-mode 1)  ; highlight matching parens. how is this not some sort of default
+
 (load "defuns-config.el")  ; various macros from cs184
 ; (load "custom-coloring.el")  ; from cs184
 (load "js-config.el")  ; JS and node.js specific stuff
