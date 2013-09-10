@@ -21,3 +21,4 @@ set cindent
 set ic
 autocmd BufWritePre * :%s/\s\+$//e
 
+imap jj <Esc>
