@@ -66,7 +66,7 @@ and their terminal equivalents.")
 (global-set-key "\M-p" 'prev5)
 (global-set-key "\M-o" 'other-window)
 (global-set-key "\M-i" 'back-window)
-(global-set-key "\C-z" 'zap-to-char)
+;(global-set-key "\C-z" 'zap-to-char)  ; I need this
 (global-set-key "\C-h" 'backward-delete-char)
 (global-set-key "\M-d" 'delete-word)
 (global-set-key "\M-h" 'backward-delete-word)
