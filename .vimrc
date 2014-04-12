@@ -18,7 +18,12 @@ set expandtab
 set smarttab
 set cindent
 
-set ic
+set ignorecase
+set smartcase
 autocmd BufWritePre * :%s/\s\+$//e
 
 imap jj <Esc>
+
+" http://vim.wikia.com/wiki/Easy_edit_of_files_in_the_same_directory
+cabbr <expr> %% expand('%:p:h')
+
