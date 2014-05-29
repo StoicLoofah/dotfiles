@@ -27,3 +27,6 @@ imap jj <Esc>
 " http://vim.wikia.com/wiki/Easy_edit_of_files_in_the_same_directory
 cabbr <expr> %% expand('%:p:h')
 
+" from Damian Conway
+nnoremap ; :
+nnoremap : ;
