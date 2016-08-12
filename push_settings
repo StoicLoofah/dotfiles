@@ -5,3 +5,5 @@ cp -rf .emacs.d ~/
 cp -rf .vim ~/
 cp .vimrc ~/
 cp .screenrc ~/
+
+vim +PluginInstall +qall
