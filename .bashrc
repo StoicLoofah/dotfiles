@@ -8,10 +8,8 @@
 source ~/dotfiles/ubuntu.bashrc
 source ~/dotfiles/git-completion.bash
 source ~/dotfiles/umask.bashrc
-# source ~/dotfiles/prompt.bashrc
 source ~/dotfiles/alias.bashrc
 source ~/dotfiles/rlwrap.bashrc
-# source ~/dotfiles/node.bashrc
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
