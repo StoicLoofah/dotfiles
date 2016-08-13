@@ -7,4 +7,4 @@ fi
 # add more path variables
 export PATH=$PATH:./
 
-source ~/settings/keychain.bash_profile
+# source ~/settings/keychain.bash_profile

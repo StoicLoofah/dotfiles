@@ -5,14 +5,13 @@
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
-source ~/settings/ubuntu.bashrc
-source ~/settings/git-completion.bash
-source ~/settings/umask.bashrc
-# source ~/settings/prompt.bashrc
-source ~/settings/alias.bashrc
-source ~/settings/rlwrap.bashrc
-# source ~/settings/node.bashrc
-source ~/settings/virtualenv.bash_profile
+source ~/dotfiles/ubuntu.bashrc
+source ~/dotfiles/git-completion.bash
+source ~/dotfiles/umask.bashrc
+# source ~/dotfiles/prompt.bashrc
+source ~/dotfiles/alias.bashrc
+source ~/dotfiles/rlwrap.bashrc
+# source ~/dotfiles/node.bashrc
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -23,3 +22,5 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+# Use this on servers with forwarded ssh keys
+# source ~/dotfiles/persistsshkeys.bashrc
