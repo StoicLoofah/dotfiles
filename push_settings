@@ -6,4 +6,6 @@ cp -rf .vim ~/
 cp .vimrc ~/
 cp .screenrc ~/
 
+bash git-config
+
 vim +PluginInstall +qall
