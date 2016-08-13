@@ -5,6 +5,6 @@ if [ -f ~/.bashrc ]; then
 fi
 
 # add more path variables
-export PATH=$PATH:./
+export PATH=./node_modules/.bin/:$PATH:./
 
 # source ~/settings/keychain.bash_profile
