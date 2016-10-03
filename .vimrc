@@ -27,6 +27,7 @@ Plugin 'groenewege/vim-less'
 " JavaScript
 Plugin 'pangloss/vim-javascript'  " fixing JavaScript indentation in html
 Plugin 'mxw/vim-jsx'
+Plugin 'leafgarland/typescript-vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -72,3 +73,6 @@ autocmd BufReadPost *
             \ endif
 
 set wildmenu  " visual autocomplete for command menu
+
+let g:jsx_ext_required = 0
+let g:session_autosave = 'no'
