@@ -13,6 +13,12 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-session'
+Plugin 'mileszs/ack.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'kien/ctrlp.vim'
+
+" git
+Plugin 'tpope/vim-fugitive'
 
 " backend
 Plugin 'hynek/vim-python-pep8-indent'
@@ -76,3 +82,6 @@ set wildmenu  " visual autocomplete for command menu
 
 let g:jsx_ext_required = 0
 let g:session_autosave = 'no'
+
+" ctrlp.vim
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,node_modules,lib     " Linux/MacOSX
