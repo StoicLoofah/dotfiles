@@ -35,6 +35,9 @@ Plugin 'pangloss/vim-javascript'  " fixing JavaScript indentation in html
 Plugin 'mxw/vim-jsx'
 Plugin 'leafgarland/typescript-vim'
 
+" Personal wiki
+Plugin 'vimwiki/vimwiki'
+
 call vundle#end()            " required
 filetype plugin indent on    " required
 " END VUNDLE STUFF
