@@ -6,6 +6,9 @@ cp -rf ~/.emacs.d ./
 git add .emacs.d
 cp -rf ~/.vim .
 rm .vim/.netrwhist
+rm -rf .vim/bundle
+rm -rf .vim/sessions
+git co .vim/bundle/Vundle.vim
 cp ~/.vimrc ./
 cp ~/.screenrc ./
 git status

@@ -11,10 +11,10 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-misc'  " for vim-session
 Plugin 'xolox/vim-session'
 Plugin 'mileszs/ack.vim'
-Plugin 'scrooloose/nerdtree'
+" Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 
 " git
@@ -25,7 +25,7 @@ Plugin 'hynek/vim-python-pep8-indent'
 
 " HTML templating
 Plugin 'mattn/emmet-vim'
-Plugin 'digitaltoad/vim-pug'
+" Plugin 'digitaltoad/vim-pug'
 
 " CSS/LESS
 Plugin 'groenewege/vim-less'
@@ -33,7 +33,7 @@ Plugin 'groenewege/vim-less'
 " JavaScript
 Plugin 'pangloss/vim-javascript'  " fixing JavaScript indentation in html
 Plugin 'mxw/vim-jsx'
-Plugin 'leafgarland/typescript-vim'
+" Plugin 'leafgarland/typescript-vim'
 
 " Personal wiki
 Plugin 'vimwiki/vimwiki'
@@ -52,7 +52,7 @@ filetype indent on
 filetype plugin on
 set autoindent
 
-set hls  " highlightsmatches
+set hls  " highlights matches
 
 set lbr
 
