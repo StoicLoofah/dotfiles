@@ -1,5 +1,5 @@
 " VUNDLE STUFF
-set nocompatible              " be iMproved, required
+set nocompatible              " Vim, not vi
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
@@ -38,35 +38,54 @@ Plugin 'mxw/vim-jsx'
 " Personal wiki
 Plugin 'vimwiki/vimwiki'
 
-call vundle#end()            " required
-filetype plugin indent on    " required
+call vundle#end()               " required
 " END VUNDLE STUFF
+
+filetype plugin indent on       " Load plugins according to detected filetypes
+syntax on                       " Enable syntax highlighting
 
 set nu
 
 call pathogen#infect()
 
-syntax on
 
-filetype indent on
-filetype plugin on
-set autoindent
 
-set hls  " highlights matches
+set lbr                         " linebreak
 
-set lbr
+set autoindent                  " Indent according to previous line
+set expandtab                   " Spaces instead of tabs
+set softtabstop =4              " Tab key indents by 4 spaces
+set shiftwidth  =4              " >> indents by 4 spaces
+set shiftround                  " >> indents to next multiple of 'shiftwidth'
+" set smarttab
+" set cindent
 
-set tabstop=4
-set shiftwidth=4
-set expandtab
-set smarttab
-set cindent
+set laststatus  =2              " Always show status line
+set display     =lastline       " SHow as much as possible of the last line
 
-set ignorecase
-set smartcase
+set showmode                    " Show current mode in command line
+set showcmd                     " Show already typed keys when more are expected
+
+set incsearch                   " Highlight while searching with / or ?
+set hlsearch                    " Keep matches highlighted
+set ignorecase                  " Search case-insensitive if all lowercase
+set smartcase                   " Search case-sensitive if case is specified
 autocmd BufWritePre * :%s/\s\+$//e
 
-imap jj <Esc>
+set ttyfast                     " Faster redrawing
+set lazyredraw                  " Only redraw when necessary
+
+set splitbelow                  " Open new windows below the current window
+set splitright                  " Open new windows right of the current window
+
+set list                   " Show non-printable characters.
+if has('multi_byte') && &encoding ==# 'utf-8'
+  let &listchars = 'tab:▸ ,extends:❯,precedes:❮,nbsp:±'
+else
+  let &listchars = 'tab:> ,extends:>,precedes:<,nbsp:.'
+endif
+
+imap jj <Esc>                   " Remap Escape to jj for ease of typing
 
 " http://vim.wikia.com/wiki/Easy_edit_of_files_in_the_same_directory
 cabbr <expr> %% expand('%:p:h')
