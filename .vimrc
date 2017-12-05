@@ -105,6 +105,14 @@ set wildmenu  " visual autocomplete for command menu
 
 let g:jsx_ext_required = 0
 let g:session_autosave = 'no'
+let g:session_autoload = 'no'
 
 " ctrlp.vim
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,node_modules,lib     " Linux/MacOSX
+
+" vimwiki
+let g:vimwiki_list = [
+            \ {'path': '~/vimwiki/general/', 'path_html': '~/vimwiki_html/general/'},
+            \ {'path': '~/vimwiki/tekumel/', 'path_html': '~/vimwiki_html/tekumel/'},
+            \ {'path': '~/vimwiki/astral/', 'path_html': '~/vimwiki_html/astral/'}
+            \ ]
