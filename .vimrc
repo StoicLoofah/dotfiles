@@ -35,6 +35,9 @@ Plugin 'pangloss/vim-javascript'  " fixing JavaScript indentation in html
 Plugin 'mxw/vim-jsx'
 " Plugin 'leafgarland/typescript-vim'
 
+" Linting
+Plugin 'w0rp/ale'
+
 " Personal wiki
 Plugin 'vimwiki/vimwiki'
 
