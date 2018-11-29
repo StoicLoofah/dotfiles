@@ -15,12 +15,15 @@ Plugin 'xolox/vim-misc'  " for vim-session
 Plugin 'xolox/vim-session'
 Plugin 'mileszs/ack.vim'
 " Plugin 'scrooloose/nerdtree'
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
+
+Plugin 'tpope/vim-commentary'
 
 " git
 Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
 
-" backend
+" Python
 Plugin 'hynek/vim-python-pep8-indent'
 
 " HTML templating
@@ -98,6 +101,10 @@ cabbr <expr> %% expand('%:p:h')
 nnoremap ; :
 nnoremap : ;
 
+" https://statico.github.io/vim.html
+nmap j gj
+nmap k gk
+
 " Return to last edit position when opening files (You want this!)
 autocmd BufReadPost *
             \ if line("'\"") > 0 && line("'\"") <= line("$") |
@@ -112,6 +119,7 @@ let g:session_autoload = 'no'
 
 " ctrlp.vim
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,node_modules,lib     " Linux/MacOSX
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
 " vimwiki
 let g:vimwiki_list = [
@@ -119,3 +127,8 @@ let g:vimwiki_list = [
             \ {'path': '~/vimwiki/tekumel/', 'path_html': '~/vimwiki_html/tekumel/'},
             \ {'path': '~/vimwiki/astral/', 'path_html': '~/vimwiki_html/astral/'}
             \ ]
+
+" ack
+if executable('ag')
+      let g:ackprg = 'ag --vimgrep'
+  endif
