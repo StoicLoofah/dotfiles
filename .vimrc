@@ -44,6 +44,9 @@ Plugin 'w0rp/ale'
 " Personal wiki
 Plugin 'vimwiki/vimwiki'
 
+" Rust
+Plugin 'rust-lang/rust.vim'
+
 call vundle#end()               " required
 " END VUNDLE STUFF
 
@@ -125,7 +128,8 @@ let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standar
 let g:vimwiki_list = [
             \ {'path': '~/vimwiki/general/', 'path_html': '~/vimwiki_html/general/'},
             \ {'path': '~/vimwiki/tekumel/', 'path_html': '~/vimwiki_html/tekumel/'},
-            \ {'path': '~/vimwiki/astral/', 'path_html': '~/vimwiki_html/astral/'}
+            \ {'path': '~/vimwiki/astral/', 'path_html': '~/vimwiki_html/astral/'},
+            \ {'path': '~/vimwiki/clarion/', 'path_html': '~/vimwiki_html/clarion/'}
             \ ]
 
 " ack

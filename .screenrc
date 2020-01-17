@@ -88,6 +88,7 @@ hardstatus alwayslastline "%H %-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%<"
 screen -t editor 0
 screen -t bash 1
 screen -t server 2
+screen -t webpack 3
 
 # 2.4) Description of the keywords used in hardstatus
 # caption always "%?%F%{-b bc}%:%{-b bb}%?%C|%D|%M %d|%H%?%F%{+u wb}%? %L=%-Lw%45>%{+b by}%n%f* %t%{-}%+Lw%-0<"
