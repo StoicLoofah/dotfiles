@@ -5,10 +5,16 @@ rm ~/.emacs.d/session*
 cp -rf ~/.emacs.d ./
 git add .emacs.d
 cp -rf ~/.vim .
+
 rm .vim/.netrwhist
 rm -rf .vim/bundle
+rm -rf .vim/plugged
 rm -rf .vim/sessions
-git co .vim/bundle/Vundle.vim
+rm -f .vim/autoload/plug.vim
+
 cp ~/.vimrc ./
 cp ~/.screenrc ./
+cp ~/.ackrc ./
+cp ~/.agignore ./
+
 git status

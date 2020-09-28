@@ -1,63 +1,61 @@
-" VUNDLE STUFF
 set nocompatible              " Vim, not vi
 filetype off                  " required
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+" auto install vim plug
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
 
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
+" vim-plug
+call plug#begin('~/.vim/plugged')
 
-Plugin 'xolox/vim-misc'  " for vim-session
-Plugin 'xolox/vim-session'
-Plugin 'mileszs/ack.vim'
+" plugin section
+Plug 'xolox/vim-misc'  " for vim-session
+Plug 'xolox/vim-session'
+Plug 'mileszs/ack.vim'
 " Plugin 'scrooloose/nerdtree'
-Plugin 'ctrlpvim/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 
-Plugin 'tpope/vim-commentary'
+Plug 'tpope/vim-commentary'
 
 " git
-Plugin 'tpope/vim-fugitive'
-Plugin 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 
 " Python
-Plugin 'hynek/vim-python-pep8-indent'
+Plug 'hynek/vim-python-pep8-indent'
 
 " HTML templating
-Plugin 'mattn/emmet-vim'
+Plug 'mattn/emmet-vim'
 " Plugin 'digitaltoad/vim-pug'
 
 " CSS/LESS
-Plugin 'groenewege/vim-less'
+Plug 'groenewege/vim-less'
 
 " JavaScript
-Plugin 'pangloss/vim-javascript'  " fixing JavaScript indentation in html
-Plugin 'mxw/vim-jsx'
+Plug 'pangloss/vim-javascript'  " fixing JavaScript indentation in html
+Plug 'maxmellon/vim-jsx-pretty'
+" Plug 'mxw/vim-jsx'
 " Plugin 'leafgarland/typescript-vim'
 
 " Linting
-Plugin 'w0rp/ale'
+Plug 'w0rp/ale'
 
 " Personal wiki
-Plugin 'vimwiki/vimwiki'
+Plug 'vimwiki/vimwiki'
 
 " Rust
-Plugin 'rust-lang/rust.vim'
+" Plugin 'rust-lang/rust.vim'
 
-call vundle#end()               " required
-" END VUNDLE STUFF
+" end vim-plug
+call plug#end()
 
 filetype plugin indent on       " Load plugins according to detected filetypes
 syntax on                       " Enable syntax highlighting
 
 set nu
-
-call pathogen#infect()
-
-
 
 set lbr                         " linebreak
 

@@ -3,8 +3,11 @@
 cp .emacs ~/
 cp -rf .emacs.d ~/
 cp -rf .vim ~/
+
 cp .vimrc ~/
 cp .screenrc ~/
+cp .ackrc ~/
+cp .agignore ~/
 
 bash git-config
 
