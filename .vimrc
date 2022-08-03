@@ -134,3 +134,6 @@ let g:vimwiki_list = [
 if executable('ag')
       let g:ackprg = 'ag --vimgrep'
   endif
+
+" Auto generate tags file on file write of *.c and *.h files
+"autocmd BufWritePost *.py,*.js,*.jsx silent! !ctags . &
